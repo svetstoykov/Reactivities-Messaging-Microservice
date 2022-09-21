@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Models/Message.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageBrokerWorker/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageBrokerWorker/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReactivitiesMessaging.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663771431617</updated>
-      <workItem from="1663771434516" duration="309000" />
+      <workItem from="1663771434516" duration="1191000" />
     </task>
     <servers />
   </component>
