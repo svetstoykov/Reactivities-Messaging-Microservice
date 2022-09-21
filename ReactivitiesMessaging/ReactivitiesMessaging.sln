@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBrokerWorker", "MessageBrokerWorker\MessageBrokerWorker.csproj", "{D775B4FF-3CA9-4537-BC24-915B6C03BAE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{747477D9-F53F-4823-A9CD-3B357AC03686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{3306CEDF-034B-4005-8159-89866C0F1D50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D775B4FF-3CA9-4537-BC24-915B6C03BAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D775B4FF-3CA9-4537-BC24-915B6C03BAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D775B4FF-3CA9-4537-BC24-915B6C03BAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D775B4FF-3CA9-4537-BC24-915B6C03BAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747477D9-F53F-4823-A9CD-3B357AC03686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747477D9-F53F-4823-A9CD-3B357AC03686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747477D9-F53F-4823-A9CD-3B357AC03686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747477D9-F53F-4823-A9CD-3B357AC03686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3306CEDF-034B-4005-8159-89866C0F1D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3306CEDF-034B-4005-8159-89866C0F1D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3306CEDF-034B-4005-8159-89866C0F1D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3306CEDF-034B-4005-8159-89866C0F1D50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
