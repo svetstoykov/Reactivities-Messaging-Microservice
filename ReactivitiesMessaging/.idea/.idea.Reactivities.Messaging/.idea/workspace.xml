@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Domain/Models/Message.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Domain/Models/Profile.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Models/Message.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivitiesMessaging.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Reactivities.Messaging.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReactivitiesMessaging.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivitiesMessaging.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663771431617</updated>
       <workItem from="1663771434516" duration="2007000" />
-      <workItem from="1663828469948" duration="6601000" />
+      <workItem from="1663828469948" duration="6496000" />
     </task>
     <servers />
   </component>
