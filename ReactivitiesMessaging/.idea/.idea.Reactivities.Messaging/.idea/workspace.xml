@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Models/Message.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Models/Profile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Models/Message.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Models/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/Message.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReactivitiesMessaging.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ReactivitiesMessaging.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ab58c42da60344ba945a23af2a868a6c1c00/74/d8c80cb2/IEntityDataService`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af9d35ca731afb5287958b515b6153ba85e3d21a1f0b0d5531e5c5278fed722/BackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dc80e3ef9a184478ecc3dba875a36d46b28f2cafa67549fe687c0c553ff3/ITypeNameSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e570ccd3bdc072d8cebc16e99cc244fa6ce4324bbef22939e3eda56433e89a6/DefaultTypeNameSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -73,6 +78,9 @@
       <updated>1663771431617</updated>
       <workItem from="1663771434516" duration="2007000" />
       <workItem from="1663828469948" duration="6496000" />
+      <workItem from="1666966678007" duration="713000" />
+      <workItem from="1666969983750" duration="612000" />
+      <workItem from="1667661540752" duration="6661000" />
     </task>
     <servers />
   </component>

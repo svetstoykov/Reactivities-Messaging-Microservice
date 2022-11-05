@@ -1,24 +1,26 @@
-using System.Text;
-using Domain.Models;
+using Core.Commands;
 using EasyNetQ;
+using MediatR;
+using Reactivities.Common.Messages.Models.Request;
+using Reactivities.Common.Result.Models;
 
 namespace MessageBrokerService;
 
 public class Worker : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
     private readonly IBus _rabbitMqBus;
+    private readonly IMediator _mediator;
 
-    public Worker(ILogger<Worker> logger, IBus rabbitMqBus)
+    public Worker(IBus rabbitMqBus, IMediator mediator)
     {
-        _logger = logger;
-        _rabbitMqBus = rabbitMqBus;
+        this._rabbitMqBus = rabbitMqBus;
+        this._mediator = mediator;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        await _rabbitMqBus.Rpc
-            .RespondAsync<int, StringBuilder>(_ => 
-                new StringBuilder("working?"), cancellationToken: stoppingToken);
+        await this._rabbitMqBus.Rpc.RespondAsync<SendMessageRequestModel, Result<bool>>(
+            async request => await this._mediator.Send(new SendMessage.Command(
+                request.SenderUsername, request.ReceiverUsername, request.Content, request.DateSent), stoppingToken));
     }
 }
