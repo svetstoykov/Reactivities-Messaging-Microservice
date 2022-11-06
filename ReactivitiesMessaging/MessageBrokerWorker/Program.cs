@@ -1,7 +1,6 @@
-using EasyNetQ;
-using Infrastructure;
+using Core.Extensions;
+using Infrastructure.Extensions;
 using MessageBrokerService;
-using Microsoft.EntityFrameworkCore;
 
 var host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostContext, configBuilder) =>
@@ -18,12 +17,9 @@ var host = Host.CreateDefaultBuilder(args)
         var config = hostContext.Configuration;
 
         services
-            .AddHostedService<Worker>()
-            .AddSingleton(RabbitHutch.CreateBus(config.GetConnectionString("RabbitMQBus")))
-            .AddDbContext<ReactivitiesContext>(options =>
-            {
-                options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
-            });
+            .AddApplicationServices()
+            .AddInfrastructureServices(config)
+            .AddHostedService<Worker>();
     })
     .Build();
 

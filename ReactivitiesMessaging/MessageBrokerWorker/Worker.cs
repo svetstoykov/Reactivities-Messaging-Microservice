@@ -8,19 +8,41 @@ namespace MessageBrokerService;
 
 public class Worker : BackgroundService
 {
+    private class ErrorMessage
+    {
+        public const string ForInvalidMediatorScopedService = "Failed to retrieve scoped Mediator service";
+    }
+    
     private readonly IBus _rabbitMqBus;
-    private readonly IMediator _mediator;
+    private readonly IServiceProvider _serviceProvider;
 
-    public Worker(IBus rabbitMqBus, IMediator mediator)
+    public Worker(IBus rabbitMqBus, IServiceProvider serviceProvider)
     {
         this._rabbitMqBus = rabbitMqBus;
-        this._mediator = mediator;
+        this._serviceProvider = serviceProvider;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        await this._rabbitMqBus.Rpc.RespondAsync<SendMessageRequestModel, Result<bool>>(
-            async request => await this._mediator.Send(new SendMessage.Command(
-                request.SenderUsername, request.ReceiverUsername, request.Content, request.DateSent), stoppingToken));
+        await this._rabbitMqBus.Rpc.RespondAsync<SendMessageRequestModel, Result<bool>>(async req =>
+            {
+                var command = new SendMessage.Command(req.SenderUsername, req.ReceiverUsername, req.Content, req.DateSent);
+
+                return await this.ExecuteScopedMediatorRequestAsync(command);
+            }, cancellationToken: stoppingToken);
+    }
+
+    private async Task<TResponse> ExecuteScopedMediatorRequestAsync<TResponse>(IRequest<TResponse> mediatorRequest)
+    {
+        using var scope = this._serviceProvider.CreateScope();
+        var mediator = scope.ServiceProvider.GetService<IMediator>();
+
+        if (mediator == null)
+        {
+            throw new InvalidOperationException(
+                ErrorMessage.ForInvalidMediatorScopedService);
+        }
+
+        return await mediator.Send(mediatorRequest);
     }
 }

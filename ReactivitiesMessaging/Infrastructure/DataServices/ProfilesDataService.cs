@@ -5,12 +5,15 @@ using Reactivities.Common.DataServices.Services;
 
 namespace Infrastructure.DataServices;
 
-public class ProfilesDataService : EntityDataService<ReactivitiesContext,Profile>,IProfilesDataService
+public class ProfilesDataService : IProfilesDataService
 {
-    public ProfilesDataService(ReactivitiesContext dataContext) : base(dataContext)
+    private readonly ReactivitiesContext _dbContext;
+
+    public ProfilesDataService(ReactivitiesContext dbContext)
     {
+        this._dbContext = dbContext;
     }
-    
+
     public async Task<Profile> GetByUsernameAsync(string username)
-        => await this.DataSet.FirstOrDefaultAsync(p => p.UserName.ToLower() == username.ToLower());
+        => await this._dbContext.Profiles.FirstOrDefaultAsync(p => p.UserName.ToLower() == username.ToLower());
 }

@@ -53,10 +53,6 @@ namespace Infrastructure
 
                 entity.Property(e => e.UserName).HasMaxLength(256);
             });
-
-            OnModelCreatingPartial(modelBuilder);
         }
-
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

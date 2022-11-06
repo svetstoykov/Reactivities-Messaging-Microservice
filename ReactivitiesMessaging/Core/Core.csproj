@@ -13,10 +13,14 @@
       <PackageReference Include="AutoMapper" Version="12.0.0" />
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
       <PackageReference Include="MediatR" Version="11.0.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
       <PackageReference Include="Reactivities.Common.DataServices.Abstractions" Version="1.0.0" />
       <PackageReference Include="Reactivities.Common.ErrorHandling" Version="1.0.0" />
       <PackageReference Include="Reactivities.Common.Messages" Version="1.0.0" />
       <PackageReference Include="Reactivities.Common.Result" Version="1.0.0" />
+      <PackageReference Include="Scrutor" Version="4.2.0" />
     </ItemGroup>
 
 </Project>

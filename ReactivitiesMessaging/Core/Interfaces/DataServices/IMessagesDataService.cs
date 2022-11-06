@@ -3,7 +3,7 @@ using Reactivities.Common.DataServices.Abstractions.Interfaces;
 
 namespace Core.Interfaces.DataServices;
 
-public interface IMessagesDataService : IEntityDataService<Message>
+public interface IMessagesDataService
 {
     Task SaveMessageToDatabaseAsync(Message message);
 }

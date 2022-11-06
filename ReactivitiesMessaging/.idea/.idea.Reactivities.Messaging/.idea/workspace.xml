@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Extensions/InfrastructureExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReactivitiesMessaging/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Models/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +24,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/176506bee4a446a4b88b5708263caa8a1600/11/db65d95b/Result`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ab58c42da60344ba945a23af2a868a6c1c00/74/d8c80cb2/IEntityDataService`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/101fd63281b670453f6ab2b3f03f7b2d6693f8f91071af1d8897594813f1ee/Work.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/30d4ec66d39443e0825c22e9c371dda189e8ba2aea4f521a1a9429d4ccbeb272/HandlerCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea95343b9387b73062a9b61b7538f826c54ce3529632b4472ba4494044d23/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/40b7e3ebc1b427c77ecee66c15966e193b9bd3aedc6df9424bc7124710da93/RpcExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6619deaffe852856725b898868fe5e50a1e53d35f89a86ccbe7488461013/AsyncConsumerWorkService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/66efbec125c33fdfb3a1bec1ed20a19604e9735174ac7196e96ed9476726/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/739758e4936ba6912e204334b31f488c6df65511f7a60e7e1245fe28eccf261/AsyncBasicConsumer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74593cffda1e21b56a94f6f59cddd42c17913e780fbd31c3cd6f1d9455b59f4/IRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/909d19e7ec35e1c8d676b6ad5f19e29fa48e35cd1b8b3728186eeeeb941c4796/AdvancedBusExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/999e9f3918aff2f80b99a5d7418756f8c2b27d92e28f4f3be3dcfb8d25536/HandlerRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a882569372ef334e242497aeee794f1ca6f11d847f130ba77efc56d6ade/RabbitAdvancedBus.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af9d35ca731afb5287958b515b6153ba85e3d21a1f0b0d5531e5c5278fed722/BackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b31e7cda9913b7bc56d481c5128a3be7a236f2e78182d45eb2e0991fa03a/BasicDeliver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b7d5e3d48f6507dc7d8ffb4bf9ecadb4918df55e3070a8a2a3f47f1655e32/TaskHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bdfd6e5a9487a7b81e0f6646f3c7ecdbd47f018a18a31cda6874b8ebc494b/PubSubExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1da7b6c7c71a954fe3eb2531c6476711b3e6d93a8d76795386d326bb9dbc/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dc80e3ef9a184478ecc3dba875a36d46b28f2cafa67549fe687c0c553ff3/ITypeNameSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/df71358f7b7337a1eee3a65abe6d678dd9a065e256b8cc3fd44a2949754/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e570ccd3bdc072d8cebc16e99cc244fa6ce4324bbef22939e3eda56433e89a6/DefaultTypeNameSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eec94c9d19119a28bb2e12f2d89536311637eaf01b43d613952b4b68a68dbd/DefaultRpc.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,6 +99,7 @@
       <workItem from="1666966678007" duration="713000" />
       <workItem from="1666969983750" duration="612000" />
       <workItem from="1667661540752" duration="6661000" />
+      <workItem from="1667716558123" duration="12416000" />
     </task>
     <servers />
   </component>
