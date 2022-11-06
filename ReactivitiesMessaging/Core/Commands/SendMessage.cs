@@ -9,13 +9,8 @@ public class SendMessage
 {
     public class Command : IRequest<Result<bool>>
     {
-        public Command(string senderUsername, string receiverUsername, string content, DateTime dateSent)
-        {
-            this.SenderUsername = senderUsername;
-            this.ReceiverUsername = receiverUsername;
-            this.Content = content;
-            this.DateSent = dateSent;
-        }
+        private Command()
+        { }
         
         public string SenderUsername { get; }
         public string ReceiverUsername{ get; }

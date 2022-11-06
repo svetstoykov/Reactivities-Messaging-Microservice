@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Extensions/InfrastructureExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/MappingProfiles/MessagesMappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Queries/GetSenderReceiverConversation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +93,7 @@
       <workItem from="1666966678007" duration="713000" />
       <workItem from="1666969983750" duration="612000" />
       <workItem from="1667661540752" duration="6661000" />
-      <workItem from="1667716558123" duration="12416000" />
+      <workItem from="1667716558123" duration="13484000" />
     </task>
     <servers />
   </component>
