@@ -1,23 +1,20 @@
 ﻿using Core.Interfaces.DataServices;
 using Domain.Models;
-using Microsoft.EntityFrameworkCore;
 using Reactivities.Common.DataServices.Services;
 
 namespace Infrastructure.DataServices;
 
-public class MessagesDataService : IMessagesDataService
+public class MessagesDataService : EntityDataService<ReactivitiesContext, Message>, IMessagesDataService
 {
-    private readonly ReactivitiesContext _dbContext;
-
-    public MessagesDataService(ReactivitiesContext dbContext)
+    public MessagesDataService(ReactivitiesContext dataContext)
+        : base(dataContext)
     {
-        this._dbContext = dbContext;
     }
-
-    public async Task SaveMessageToDatabaseAsync(Message message)
+    
+    public async Task SaveMessageAsync(Message message)
     {
-        this._dbContext.Messages.Add(message);
+        this.DataSet.Add(message);
 
-        await this._dbContext.SaveChangesAsync();
+        await this.SaveChangesAsync();
     }
 }

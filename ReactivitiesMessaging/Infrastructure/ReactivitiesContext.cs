@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Domain.Models;
+﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Infrastructure
 {

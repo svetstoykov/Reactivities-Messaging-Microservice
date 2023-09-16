@@ -1,8 +1,8 @@
 using Core.Extensions;
 using Infrastructure.Extensions;
-using MessageBrokerService;
 
 var host = Host.CreateDefaultBuilder(args)
+    .UseWindowsService()
     .ConfigureAppConfiguration((hostContext, configBuilder) =>
     {
         configBuilder
@@ -18,8 +18,7 @@ var host = Host.CreateDefaultBuilder(args)
 
         services
             .AddApplicationServices()
-            .AddInfrastructureServices(config)
-            .AddHostedService<Worker>();
+            .AddInfrastructureServices(config);
     })
     .Build();
 

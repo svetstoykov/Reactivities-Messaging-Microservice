@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
-using EasyNetQ;
+using Infrastructure.Consumers;
+using Infrastructure.Settings;
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,13 +12,12 @@ namespace Infrastructure.Extensions;
 public static class InfrastructureExtensions
 {
     private const string DefaultConnection = nameof(DefaultConnection);
-    private const string RabbitMQBus = nameof(RabbitMQBus);
-    
+
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration config)
     {
         return services
             .AddDbContext(config)
-            .AddRabbitMqMessageBus(config)
+            .AddRabbitMq(config)
             .AddMediatR(Assembly.GetExecutingAssembly())
             .Scan(scan => scan
                 .FromCallingAssembly()
@@ -30,6 +31,24 @@ public static class InfrastructureExtensions
             options.UseSqlServer(config.GetConnectionString(DefaultConnection));
         });
 
-    private static IServiceCollection AddRabbitMqMessageBus(this IServiceCollection services, IConfiguration config)
-        => services.AddSingleton(RabbitHutch.CreateBus(config.GetConnectionString(RabbitMQBus)));
+    private static IServiceCollection AddRabbitMq(this IServiceCollection services, IConfiguration config)
+        => services.AddMassTransit(x =>
+        {
+            x.AddConsumer<SendMessageConsumer>();
+
+            var mqConfig = config
+                .GetSection(nameof(RabbitMqConfiguration))
+                .Get<RabbitMqConfiguration>();
+
+            x.UsingRabbitMq((ctx, cfg) =>
+            {
+                cfg.Host(mqConfig.ConnectionString);
+
+                cfg.ReceiveEndpoint(mqConfig.SendMessageQueueName, e =>
+                {
+                    e.UseRawJsonDeserializer(isDefault: true);
+                    e.Consumer<SendMessageConsumer>(ctx);
+                });
+            });
+        });
 }
