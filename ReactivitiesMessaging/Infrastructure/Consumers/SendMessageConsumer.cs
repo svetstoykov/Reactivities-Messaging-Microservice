@@ -21,7 +21,7 @@ public class SendMessageConsumer : IConsumer<SendMessageModel>
     {
         var message = context.Message;
         
-        var query = new SendMessage.Command(
+        var query = new Core.Commands.SendMessage.Command(
             message.SenderUsername,
             message.ReceiverUsername,
             message.Content,

@@ -40,9 +40,11 @@ public class SendMessage
         {
             try
             {
-                var sender = await this._profilesDataService.GetByUsernameAsync(request.SenderUsername);
+                var sender = await this._profilesDataService
+                    .GetByUsernameAsync(request.SenderUsername);
 
-                var receiver = await this._profilesDataService.GetByUsernameAsync(request.ReceiverUsername);
+                var receiver = await this._profilesDataService
+                    .GetByUsernameAsync(request.ReceiverUsername);
 
                 var message = Message.New(sender, receiver, request.Content, request.DateSent);
 

@@ -37,15 +37,15 @@ namespace Domain.Models
                 throw new ArgumentException(content);
             }
 
-            GuardAgainstInvalidUsername(sender);
+            GuardAgainstInvalidProfile(sender);
 
-            GuardAgainstInvalidUsername(receiver);
+            GuardAgainstInvalidProfile(receiver);
 
             return new Message(sender, receiver, content, dateSent);
         }
 
 
-        private static void GuardAgainstInvalidUsername(Profile sender)
+        private static void GuardAgainstInvalidProfile(Profile sender)
         {
             if (sender == null)
             {

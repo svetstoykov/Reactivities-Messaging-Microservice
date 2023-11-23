@@ -8,26 +8,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf06389f-8da5-45bf-9bb0-a843695e5dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Consumers/SendMessageConsumer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Models/SendMessageModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Settings/RabbitMqConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Common/PaginatedResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Common/Pagination.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Models/MessageOutputModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Queries/GetConversation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Consumers/GetConversationConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Extensions/QueryableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Mappings/MappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Models/GetConversationMessageModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Reactivities.Messaging/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Commands/SendMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Extensions/ApplicationServiceExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Extensions/ApplicationServiceExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IMessagesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/DataServices/IProfilesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/MappingProfiles/MessagesMappingProfile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Queries/GetSenderReceiverConversation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Models/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Models/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Consumers/SendMessageConsumer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Consumers/SendMessageConsumer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/MessagesDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/DataServices/ProfilesDataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/Extensions/InfrastructureExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Extensions/InfrastructureExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/ReactivitiesContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/MessageBrokerWorker.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MessageBrokerWorker/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageBrokerWorker/Worker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Settings/RabbitMqConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Settings/RabbitMqConfiguration.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +41,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b1e04be156824efea54a1cf1959971b51a00/fe/3cd81d53/SenderReceiverConversationResponseModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -124,16 +125,41 @@
       <workItem from="1677839282412" duration="4180000" />
       <workItem from="1693922956289" duration="637000" />
       <workItem from="1694850834279" duration="151000" />
-      <workItem from="1694851031168" duration="1545000" />
+      <workItem from="1694851031168" duration="2196000" />
+      <workItem from="1700726411452" duration="4056000" />
+      <workItem from="1700732150278" duration="43000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed worker to use masstransit&#10;Removed logic for getting messages">
+      <option name="closed" value="true" />
+      <created>1694853971357</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694853971357</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Fixed worker to use masstransit&#10;Removed logic for getting messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed worker to use masstransit&#10;Removed logic for getting messages" />
   </component>
 </project>

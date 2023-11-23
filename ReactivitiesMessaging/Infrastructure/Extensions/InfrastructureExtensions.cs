@@ -35,20 +35,29 @@ public static class InfrastructureExtensions
         => services.AddMassTransit(x =>
         {
             x.AddConsumer<SendMessageConsumer>();
+            x.AddConsumer<GetConversationConsumer>();
 
             var mqConfig = config
                 .GetSection(nameof(RabbitMqConfiguration))
                 .Get<RabbitMqConfiguration>();
 
-            x.UsingRabbitMq((ctx, cfg) =>
+            x.UsingRabbitMq((cont, cfg) =>
             {
                 cfg.Host(mqConfig.ConnectionString);
 
                 cfg.ReceiveEndpoint(mqConfig.SendMessageQueueName, e =>
                 {
+                    e.Bind(mqConfig.MessagingExchangeName);
                     e.UseRawJsonDeserializer(isDefault: true);
-                    e.Consumer<SendMessageConsumer>(ctx);
+                    e.Consumer<SendMessageConsumer>(cont);
                 });
-            });
+                
+                cfg.ReceiveEndpoint(mqConfig.GetConversationQueueName, e =>
+                {
+                    e.Bind(mqConfig.GetConversationQueueName);
+                    e.UseRawJsonDeserializer(isDefault: true);
+                    e.Consumer<GetConversationConsumer>(cont);
+                });
+            }); 
         });
 }
